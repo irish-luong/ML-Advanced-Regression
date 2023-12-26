@@ -1,7 +1,7 @@
 # 
 
 # ML-Advanced-Regression-case-study
-Build a multiple linear regression model for the prediction of demand for shared bikes
+Build a regression model to predict housing price for an usecase in Australia
 
 
 ## Table of Contents
@@ -12,8 +12,6 @@ Build a multiple linear regression model for the prediction of demand for shared
     - [Problem statement](#problem-statement)
     - [Business goal](#business-goal)
   - [Conclusions](#conclusions)
-    - [Model for **cnt** prediction](#model-for-cnt-prediction)
-    - [Model for **registered** prediction](#model-for-registered-prediction)
   - [Technologies Used](#technologies-used)
   - [Contact](#contact)
 
@@ -33,37 +31,7 @@ The company wants to know:
 
 ## Conclusions
 
-### Model for **cnt** prediction
-
-
-```cnt = 0.24 + 0.23xyr -0.06xholiday 0.05xweekday 0.02xworkingday 0.49xtemp -0.12xhum -0.18xwindspeed -0.25xlight_snow -0.06xmist -0.07xspring 0.04xsummer 0.09xwinter```
-
-```
-Dep. Variable:                    cnt   R-squared:                       0.834
-Model:                            OLS   Adj. R-squared:                  0.830
-Method:                 Least Squares   F-statistic:                     207.4
-Date:                Mon, 20 Nov 2023   Prob (F-statistic):          1.00e-184
-Time:                        12:48:21   Log-Likelihood:                 495.78
-No. Observations:                 510   AIC:                            -965.6
-Df Residuals:                     497   BIC:                            -910.5
-Df Model:                          12                                         
-Covariance Type:            nonrobust                                         
-```
-
-
-### Model for **registered** prediction
-```registered = 0.24 + 0.25xyr 0.14xworkingday 0.38xtemp -0.11xhum -0.15xwindspeed -0.25xlight_snow -0.05xmist -0.1xspring 0.09xwinter```
-
-```
-Dep. Variable:             registered   R-squared:                       0.840
-Model:                            OLS   Adj. R-squared:                  0.837
-Method:                 Least Squares   F-statistic:                     290.7
-Date:                Mon, 20 Nov 2023   Prob (F-statistic):          2.52e-192
-Time:                        12:48:57   Log-Likelihood:                 497.06
-No. Observations:                 510   AIC:                            -974.1
-Df Residuals:                     500   BIC:                            -931.8
-```
-
+See in file pipeline.ipynb and .pdf
 
 ## Technologies Used
 - python - version 3.10.13
